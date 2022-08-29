@@ -1,0 +1,33 @@
+{
+  "name": "coingecko-update-price",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "devStart": "nodemon index.js",
+    "fix": "npx eslint *.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanHarsh/coingecko-update-price.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthanHarsh/coingecko-update-price/issues"
+  },
+  "homepage": "https://github.com/EthanHarsh/coingecko-update-price#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "node-fetch": "^2.6.7",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.15"
+  }
+}
