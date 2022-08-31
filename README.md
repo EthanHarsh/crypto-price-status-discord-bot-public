@@ -4,7 +4,7 @@
 
 ## Description
 
-A Discord Bot that displays multiple tokens/coins price data in the status of the bot username on Discord.
+This bot, built with Node.js, the Coingecko API, and the official Discord SDK, displays numerous tokens/coins price information on Discord status.
 
 ## Quick Start
 
