@@ -8,6 +8,8 @@ A Discord Bot that displays multiple tokens/coins price data in the status of th
 
 ## Quick Start
 
+First, input Discord tokens/IDs into config.json file.
+
 ### Using Docker
 ```
 sudo docker build . -t crypto-price-status-discord-bot
