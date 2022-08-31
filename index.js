@@ -20,6 +20,7 @@ client.on('ready', (ready) => {
     getAndWritePrice();
   }, length);
   length = 60000 / 2;
+  // Change Bot Status with Token Price
   setInterval(() => {
     switch (tokenSwitch) {
       case 'ethereum':
@@ -36,12 +37,13 @@ client.on('ready', (ready) => {
 
 client.login(token); // login bot using token
 
+// Get Price from CoinGecko API
 async function getAndWritePrice() {
   const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cfantom&vs_currencies=usd');
   const {ethereum, fantom} = await response.json();
   setStatus(fantom, ethereum);
 }
-
+// Set status of bot on discord server
 function setStatus(fantom, ethereum) {
   switch (tokenSwitch) {
     case 'ethereum':
