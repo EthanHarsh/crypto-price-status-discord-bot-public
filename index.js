@@ -2,7 +2,6 @@
 /* eslint-disable require-jsdoc */
 /* eslint-disable semi */
 const fetch = require('node-fetch');
-const {Sequelize, DataTypes} = require('sequelize');
 const {Client, Intents} = require('discord.js');
 const {token} = require('./config.json');
 
